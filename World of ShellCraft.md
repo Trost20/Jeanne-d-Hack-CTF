@@ -4,7 +4,7 @@
 ## Solution
 Le chall nous donne un site web sur lequel on peut se connecter et créer un compte. Une fois dessus, on peut changer notre avatar. Le serveur n'accepte que les PNG/JPG.
 
-![](../../../../Assets/Pasted%20image%2020260131160708.png)
+![](Assets/Pasted%20image%2020260131160708.png)
 On peut retrouver notre image dans `/avatars/{username}.jpg`. Après avoir passé une éternité à trouver des payloads pour avoir un shell, on peut avoir la lumière divine en testant un username très grand pour voir comment le serveur se comporte. Par exemple avec :
 
 `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`
@@ -20,14 +20,14 @@ Donc avant de renommer notre image, celle-ci est stockée dans `/avatars/{hash}
 
 1 - On cherche d'abord à obtenir le hash.
 
-![](../../../../Assets/Pasted%20image%2020260131164026.png)
+![](Assets/Pasted%20image%2020260131164026.png)
 2 - On trigger la race condition en exécutant une nouvelle fois la requête au-dessus et en actualisant immédiatement cette url :
 ```
 http://world_of_shellcraft.web01.jeanne-hack-ctf.org/avatars/92fc4a95a29d181d748d812e6dde0d27e5ecb28a67ee9475d11e472b01911f64.php
 ```
 Et on obtient le flag
 
-![](../../../../Assets/Pasted%20image%2020260131164242.png)
+![](Assets/Pasted%20image%2020260131164242.png)
 ## 🚩 Flag
 ```
 JDHACK{KACHOW_yOu_4RE_sO_F4St!}
