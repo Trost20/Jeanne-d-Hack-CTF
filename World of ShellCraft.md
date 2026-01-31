@@ -1,5 +1,5 @@
 # World of ShellCraft
-**Difficulté** : Insane | **Points** : 500 | Catégorie : System / Web
+**Difficulté** : Insane | **Points** : 492 | Catégorie : System / Web
 
 ## Solution
 Le chall nous donne un site web sur lequel on peut se connecter et créer un compte. Une fois dessus, on peut changer notre avatar. Le serveur n'accepte que les PNG/JPG.
