@@ -1,1 +1,0 @@
-# Jeanne-d-Hack-CTF
